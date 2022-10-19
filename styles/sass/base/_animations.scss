@@ -1,0 +1,34 @@
+// Menu Button Animation
+.navbar__top--menu.open .navbar__top--menu--burger {
+    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    -moz-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    -o-transform: translateX(-30px);
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.navbar__top--menu.open .navbar__top--menu--burger:before {
+    transform: rotate(45deg) translate(20px, -20px);
+    -webkit-transform: rotate(45deg) translate(20px, -20px);
+    -moz-transform: rotate(45deg) translate(20px, -20px);
+    -ms-transform: rotate(45deg) translate(20px, -20px);
+    -o-transform: rotate(45deg) translate(20px, -20px);
+}
+
+.navbar__top--menu.open .navbar__top--menu--burger:after {
+    transform: rotate(-45deg) translate(20px, 20px);
+    -webkit-transform: rotate(-45deg) translate(20px, 20px);
+    -moz-transform: rotate(-45deg) translate(20px, 20px);
+    -ms-transform: rotate(-45deg) translate(20px, 20px);
+    -o-transform: rotate(-45deg) translate(20px, 20px);
+}
+
+// Awards Slider Animation
+
+@keyframes slider {
+    0% {
+        
+    }
+}

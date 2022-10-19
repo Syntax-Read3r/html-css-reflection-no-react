@@ -1,0 +1,87 @@
+@media (min-width: 1260px) {
+	.container {
+		width: 1200px;
+		margin: 0 auto;
+		padding: 0 15px;
+
+		&__header {
+			// Beginning of NavBar
+			&--nav {
+				// Beginning of NavBar--topSection
+				&--topSection {
+					display: flex;
+					justify-content: space-between;
+					padding: 20px 0;
+					width: 100%;
+					font-family: Poppins, sans-serif;
+					font-size: 1rem;
+					color: #666;
+					background-color: red;
+
+					&--logoContainer {
+						&--logo {
+							width: 92.5%;
+						}
+					}
+
+					&--materialContainer {
+						display: flex;
+						align-items: center;
+						font-weight: 400;
+
+						&--buttonOne {
+                            cursor: pointer;
+							height: 56px;
+							line-height: 46px;
+							font-size: 1.125rem;
+							float: left;
+							color: #fff;
+							background-color: $navbar--button--one;
+							text-transform: uppercase;
+							border-radius: 3px;
+							-webkit-border-radius: 3px;
+							-moz-border-radius: 3px;
+							-ms-border-radius: 3px;
+							-o-border-radius: 3px;
+							border: 1px solid transparent;
+							padding: 5px 15px;
+							white-space: normal;
+
+                            &:hover {
+                                background-color: $navbar--button--one-hover;
+                            }
+						}
+
+                        &--buttonTwo {
+                            @extend .container__header--nav--topSection--materialContainer--buttonOne;
+                            margin-left: 20px;
+                            background-color: $navbar--button--two;
+
+                            &:hover {
+                                background-color: $navbar--button--two-hover;
+                            }
+                        }
+					}
+				}
+				// End of NavBar--topSection
+			}
+			// End of NavBar
+		}
+	}
+}
+
+// Beginning of Tablet
+
+@media (max-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+// Beginning of Mobile
+
+@media (max-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
