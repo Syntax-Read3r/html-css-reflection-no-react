@@ -45,3 +45,13 @@ $website--colorFive: #926fb1;
 $website--colorSix: #f62459;
 $website--colorSeven: #ce4125;
 
+$webisteColors: (
+    'sofware': $website--colorOne,
+    'it': $website--colorTwo,
+    'digital': $website--colorThree,
+    'telecoms': $website--colorFour,
+    'web': $website--colorFive,
+    'security': $website--colorSix,
+    'developer': $website--colorSeven
+)
+

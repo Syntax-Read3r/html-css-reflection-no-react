@@ -24,69 +24,218 @@
 		</title>
 	</head>
 	<body>
+		<!-- [ ] start of container -->
 		<div class="container">
-			<!-- Beginning of Header -->
-			<header class="container__header">
-				<!-- [ ]: Beginning of nav -->
-				<nav class="container__header--nav">
-					<div class="container__header--nav--topSection">
-						<div class="container__header--nav--topSection--logoContainer">
-							<img
-								src="images/logo2.png"
-								alt="Netmatters Logo"
-								class="container__header--nav--topSection--logoContainer--logo"
-							/>
-						</div>
-						<div class="container__header--nav--topSection--materialContainer">
-							<button
-								class="container__header--nav--topSection--materialContainer--buttonOne"
-							>
-								<i class="fa-solid fa-computer-mouse"></i> support
-							</button>
+			<!-- [ ] start of main -->
+			<div class="main">
+				<!-- [ ] start of main-outer -->
+				<div class="main-outer">
+					<!-- [ ] start of main-inner -->
+					<div class="main-inner">
+						<!-- [ ] start of header -->
+						<div class="header">
+							<header>
+								<!--[ ] start of inner -->
+								<div class="inner">
+									<!-- [ ] start of container -->
+									<div class="container">
+										<!-- [ ] start of row -->
+										<div class="row">
+											<!-- [ ] start of screen sizes -->
+											<div class="cos-xs-6 col-sm-6 col-md-5 col-lg-4">
+												<!-- [ ] start of logo container -->
+												<div class="logo-container">
+													<!-- [ ] start of logo -->
+													<a href="#netmatters' class='logo">
+														<img src="images/logo2.png" alt="Netmatters Logo" />
+													</a>
+													<!-- [x] end of logo -->
+												</div>
+												<!-- [x] end of logo container -->
+											</div>
+											<!-- [x] end of screen sizes -->
 
-							<button
-								class="container__header--nav--topSection--materialContainer--buttonTwo"
-							>
-								<i class="fa-regular fa-paper-plane"></i> Contact
-							</button>
+											<!-- [ ] start of screen sizes AND hidden feature -->
+											<div
+												class="col-xs-3 hidden-sm hidden-md hidden-lg mobile-container"
+											>
+												<!-- [ ] start of class mobile -->
+												<a href="#tel:0160000000" class="mobile">
+													<i class="fas fa-phone"></i>
+												</a>
+												<!-- [x] end of class mobile -->
+											</div>
+											<!-- [x] end of screen sizes and hidden feature -->
 
-							<form
-								action="POST"
-								class="contianer__header--nav--topSection--materialContainer--form"
-							>
-								<input
-									type="text"
-									class="container__header--nav--topSection--materialContainer--form--input"
-									placeholder="Search..."
-								/>
-								<button
-									class="container__header--nav--topSection--materialContainer--form--button"
-								>
-									<i class="fa-solid fa-search"></i>
-								</button>
-							</form>
-							<div
-								class="container__header--nav--topSection--materialContainer--hamburguerMenu"
-							>
-								<span></span>
+											<!-- [ ] start of screen sizes -->
+											<div class="col-xs-3 col-sm-6-col-md-7 col-lg-8">
+												<!-- [ ] start of actions -->
+												<div class="actions">
+													<!-- NOTE: Action One -->
+													<a
+														href="#netmatters"
+														class="btn btn-it hidden-sm hidden-xs header-btn"
+													>
+														<i class="fa-solid fa-computer-mouse"></i> Support
+													</a>
+
+													<!-- NOTE: Action Two -->
+													<a
+														href="#netmatters"
+														class="btn btn-default hidden-xs hidden-sm header-btn"
+													>
+														<i class="fa-regular fa-paper-plane"></i> Contact
+													</a>
+
+													<!-- NOTE: Action Three -->
+													<div
+														class="hidden-xs pull-left search-form-container--tablet"
+													>
+														<form method="GET" action="#" class="search-form">
+															<label for="search-input" class="hidden"
+																>Search:</label
+															>
+															<input
+																type="text"
+																class="search-form__input form-control search-bar"
+																placeholder="Search..."
+																id="search-input"
+																name="search"
+																value=""
+															/>
+															<button class="search-form__button" type="submit">
+																<i class="fa-solid fa-search"></i>
+															</button>
+														</form>
+													</div>
+													<!-- NOTE: End of Action Three -->
+
+													<!-- NOTE: Action Four -->
+													<button
+														type="button"
+														class="btn btn-primary hamburger hamburger--spin"
+														data-toggle="sidemenu"
+													>
+														<span class="hamburger-box">
+															<span class="hamburger-inner"></span>
+														</span>
+													</button>
+													<!-- NOTE: End of Action Four -->
+												</div>
+												<!-- [x] end of actions -->
+											</div>
+											<!-- [x] end of screen sizes -->
+										</div>
+										<!-- [x] end of row -->
+
+										<!-- [ ] start of hidden mobile feature -->
+										<div
+											class="hidden-sm hideen-md hidden-lg search-form-container--mobile"
+										>
+											<form
+												action="#nem"
+												accept-charset="UTF-8"
+												class="search-form"
+											>
+												<label for="search-input" class="hidden">Search:</label>
+												<input
+													type="text"
+													class="search-form__input form-control search-bar"
+													placeholder="Search..."
+													id="search-input"
+													name="search"
+													value=""
+												/>
+												<button class="search-form__button" type="submit">
+													<i class="fa-solid fa-search" aria-hidden="true"></i>
+												</button>
+											</form>
+										</div>
+										<!-- [x] end of hidden mobile feature -->
+									</div>
+									<!-- [x] end of container -->
+								</div>
+								<!-- [x] end of inner -->
+							</header>
+
+							<!-- [ ] start of bottom section of nav -->
+							<div class="main-navigation hidden-xs hidden-sm">
+								<!-- [ ] start of container -->
+								<div class="container">
+									<ul>
+										<!-- NOTE: Item One -->
+										<li>
+											<a href="#netmatters">
+												<i class="fa-solid fa-grid"></i>
+												<small>Bespoke</small>
+												software
+											</a>
+
+											<ul role="menu" class="">
+												<li><a href="#"> Workflow </a></li>
+												<li><a href="#"> Automation </a></li>
+												<li><a href="#"> Integration </a></li>
+												<li><a href="#"> Apps </a></li>
+												<li><a href="#"> Database </a></li>
+												<li><a href="#"> SharePoint </a></li>
+												<li><a href="#"> Management </a></li>
+												<li><a href="#"> Business Central </a></li>
+												<li><a href="#"> Internet of Things </a></li>
+												<li><a href="#"> Intranet Development </a></li>
+												<li><a href="#"> Customer Portal Development </a></li>
+											</ul>
+										</li>
+										<!-- NOTE: End of Item One -->
+
+										<!-- NOTE: Item Two -->
+										<li>
+											<a href="#netmatters">About Us</a>
+										</li>
+										<!-- NOTE: End of Item Two -->
+
+										<!-- NOTE: Item Three -->
+										<li>
+											<a href="#netmatters">Services</a>
+										</li>
+										<!-- NOTE: End of Item Three -->
+
+										<!-- NOTE: Item Four -->
+										<li>
+											<a href="#netmatters">Solutions</a>
+										</li>
+										<!-- NOTE: End of Item Four -->
+
+										<!-- NOTE: Item Five -->
+										<li>
+											<a href="#netmatters">Support</a>
+										</li>
+										<!-- NOTE: End of Item Five -->
+
+										<!-- NOTE: Item Six -->
+										<li>
+											<a href="#netmatters">Blog</a>
+										</li>
+										<!-- NOTE: End of Item Six -->
+
+										<!-- NOTE: Item Seven -->
+										<li>
+											<a href="#netmatters">Contact</a>
+										</li>
+										<!-- NOTE: End of Item Seven -->
+									</ul>
+								</div>
+								<!-- [x] end of container -->
 							</div>
+							<!-- [x] end of bottom section of nav -->
 						</div>
+						<!-- [x] end of header -->
 					</div>
-					<div class="container__header--nav--bottomSection"></div>
-				</nav>
-				<!-- [x]: End of nav -->
-			</header>
-			<!-- End of Header -->
-
-			<!-- Begining of Main Content -->
-			<main></main>
-			<!-- End of Main Content -->
-
-			<!-- Beginning of Footer -->
-			<footer></footer>
-			<!-- End of Footer -->
+					<!-- [x] end of main-inner -->
+				</div>
+				<!-- [x] end of main-outer -->
+			</div>
+			<!-- [x] end of main -->
 		</div>
-
-		<!-- Beginning of links -->
+		<!-- [x] End of container -->
 	</body>
 </html>

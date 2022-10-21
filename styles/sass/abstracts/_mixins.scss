@@ -1,5 +1,3 @@
-@mixin calc($key, $value) {
-    #{$key}: -webkit-calc(#{$value});
-    #{$key}: -moz-calc(#{$value});
-    #{$key}: calc(#{$value});
+@mixin websiteColor($property, $service) {
+    #{$property}: map-get($websiteColors, $service);
 }
