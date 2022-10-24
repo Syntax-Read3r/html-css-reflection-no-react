@@ -1,14 +1,20 @@
 @media (min-width: 1260px) {
 	.container {
-		width: 1200px;
-		margin: 0 auto;
-		padding: 0 15px;
-
 		&__header {
 			// Beginning of NavBar
+
 			&--nav {
 				// Beginning of NavBar--topSection
+				// Beginning of NavBar
+				position: relative;
+
 				&--topSection {
+					// screen size
+					max-width: 1200px;
+					margin: 0 auto;
+					padding: 0 15px;
+					// end of screen size
+
 					display: flex;
 					justify-content: space-between;
 					padding: 20px 0;
@@ -16,7 +22,8 @@
 					font-family: Poppins, sans-serif;
 					font-size: 1rem;
 					color: #666;
-					background-color: red;
+					background-color: #fff;
+					z-index: 10;
 
 					&--logoContainer {
 						&--logo {
@@ -111,7 +118,7 @@
 								background-color: $navbar--button--two;
 								border: 1px solid transparent;
 								position: relative;
-								left: -3.8px;
+								left: -4.1px;
 								top: 1.5px;
 								border-radius: 0 3px 3px 0;
 								font-size: 1.5rem;
@@ -158,7 +165,6 @@
 									-moz-transition: all 0.5s ease-in-out;
 									-ms-transition: all 0.5s ease-in-out;
 									-o-transition: all 0.5s ease-in-out;
-								
 								}
 
 								&:before {
@@ -167,7 +173,7 @@
 									-moz-transform: translateY(-10px);
 									-ms-transform: translateY(-10px);
 									-o-transform: translateY(-10px);
-}
+								}
 
 								&:after {
 									transform: translateY(10px);
@@ -175,19 +181,44 @@
 									-moz-transform: translateY(10px);
 									-ms-transform: translateY(10px);
 									-o-transform: translateY(10px);
-}
+								}
 							}
 						}
 						//[x] End of Hamburguer Menu
 					}
 					// [x] End of MaterialContainer
 				}
-				// End of NavBar--topSection
+				// [x] End of NavBar--topSection
+
+				// [ ] Start of NavBar--bottomSection
+				&--bottomSection {
+					background-color: $website--bg;
+					width: 100%;
+					height: 100px;
+
+					&--container {
+						max-width: 1200px;
+						margin: 0 auto;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+
+						ul {
+							background-color: green;
+							display: grid;
+							grid-template-columns: repeat(7, 1fr);
+							align-items: center;
+                      
+						}
+
+					}
+				}
+				// [x] End of bottomSection
 			}
-			// End of NavBar
 		}
 	}
-}
+} 
+
 
 // Beginning of Tablet
 
