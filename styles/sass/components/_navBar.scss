@@ -1,237 +1,318 @@
-@media (min-width: 1260px) {
-	.container {
-		&__header {
-			// Beginning of NavBar
+/*---------- MEDIA QUERIES ------------- */
 
-			&--nav {
-				// Beginning of NavBar--topSection
-				// Beginning of NavBar
-				position: relative;
-
-				&--topSection {
-					// screen size
-					max-width: 1200px;
-					margin: 0 auto;
-					padding: 0 15px;
-					// end of screen size
-
-					display: flex;
-					justify-content: space-between;
-					padding: 20px 0;
-					width: 100%;
-					font-family: Poppins, sans-serif;
-					font-size: 1rem;
-					color: #666;
-					background-color: #fff;
-					z-index: 10;
-
-					&--logoContainer {
-						&--logo {
-							width: 92.5%;
-						}
-					}
-
-					// [ ]: Start of materialConti
-					&--materialContainer {
-						display: flex;
-						align-items: center;
-						font-weight: 400;
-
-						&--buttonOne {
-							cursor: pointer;
-							height: 56px;
-							line-height: 46px;
-							font-size: 1.125rem;
-							float: left;
-							color: #fff;
-							background-color: $navbar--button--one;
-							text-transform: uppercase;
-							border-radius: 3px;
-							-webkit-border-radius: 3px;
-							-moz-border-radius: 3px;
-							-ms-border-radius: 3px;
-							-o-border-radius: 3px;
-							border: 1px solid transparent;
-							padding: 5px 15px;
-							white-space: normal;
-
-							&:hover {
-								background-color: $navbar--button--one-hover;
-							}
-						}
-
-						&--buttonTwo {
-							@extend .container__header--nav--topSection--materialContainer--buttonOne;
-							margin: 0 20px;
-							background-color: $navbar--button--two;
-
-							&:hover {
-								background-color: $navbar--button--two-hover;
-							}
-						}
-
-						// Start of searchContainer
-						&--form {
-							// Start of input search
-							position: relative;
-							&--input {
-								box-sizing: border-box;
-								display: inline-block;
-								height: 56px;
-								line-height: 46px;
-								width: 240px;
-								padding: 5px 15px;
-								border-color: #ccc;
-								border: 1px solid #e5e5e5;
-								box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
-								transition: border-color 0.15s ease-in-out,
-									box-shadow 0.15s ease-in-out;
-								font-size: 14px;
-								line-height: 1.4;
-								color: #555;
-								-webkit-transition: border-color 0.15s ease-in-out;
-								-moz-transition: border-color 0.15s ease-in-out;
-								-ms-transition: border-color 0.15s ease-in-out;
-								-o-transition: border-color 0.15s ease-in-out;
-
-								font-family: inherit;
-								position: relative;
-								top: -1.5px;
-
-								&:focus {
-									border-color: #66afe9;
-									outline: 0;
-									box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
-										0 0 8px rgba(102, 175, 233, 0.6);
-								}
-							}
-							// End of input search
-
-							// Start of button search
-							&--button {
-								cursor: pointer;
-								box-sizing: border-box;
-								display: inline-block;
-								width: 56px;
-								height: 56px;
-								color: white;
-								background-color: $navbar--button--two;
-								border: 1px solid transparent;
-								position: relative;
-								left: -4.1px;
-								top: 1.5px;
-								border-radius: 0 3px 3px 0;
-								font-size: 1.5rem;
-
-								&:hover {
-									background-color: $navbar--button--two-hover;
-								}
-							}
-						}
-						// End of searchContainer
-
-						//[ ] Start of Hamburguer Menu
-						&--hamburguerMenu {
-							cursor: pointer;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-
-							width: 56px;
-							height: 56px;
-							margin: 0 20px;
-							background-color: $website--bg;
-							border-radius: 3px;
-							-webkit-border-radius: 3px;
-							-moz-border-radius: 3px;
-							-ms-border-radius: 3px;
-							-o-border-radius: 3px;
-
-							& span {
-								align-items: center;
-								width: 32px;
-								height: 4px;
-								background-color: #fff;
-
-								&:before,
-								&:after {
-									content: "";
-									position: absolute;
-									width: 32px;
-									height: 4px;
-									background-color: #fff;
-									transition: all 0.5s ease-in-out;
-									-webkit-transition: all 0.5s ease-in-out;
-									-moz-transition: all 0.5s ease-in-out;
-									-ms-transition: all 0.5s ease-in-out;
-									-o-transition: all 0.5s ease-in-out;
-								}
-
-								&:before {
-									transform: translateY(-10px);
-									-webkit-transform: translateY(-10px);
-									-moz-transform: translateY(-10px);
-									-ms-transform: translateY(-10px);
-									-o-transform: translateY(-10px);
-								}
-
-								&:after {
-									transform: translateY(10px);
-									-webkit-transform: translateY(10px);
-									-moz-transform: translateY(10px);
-									-ms-transform: translateY(10px);
-									-o-transform: translateY(10px);
-								}
-							}
-						}
-						//[x] End of Hamburguer Menu
-					}
-					// [x] End of MaterialContainer
-				}
-				// [x] End of NavBar--topSection
-
-				// [ ] Start of NavBar--bottomSection
-				&--bottomSection {
-					background-color: $website--bg;
-					width: 100%;
-					height: 100px;
-
-					&--container {
-						max-width: 1200px;
-						margin: 0 auto;
-						display: flex;
-						align-items: center;
-						justify-content: center;
-
-						ul {
-							background-color: green;
-							display: grid;
-							grid-template-columns: repeat(7, 1fr);
-							align-items: center;
-                      
-						}
-
-					}
-				}
-				// [x] End of bottomSection
-			}
-		}
+@media (max-width: 767px) {
+	header {
+	  padding-bottom: 0px !important;
 	}
-} 
-
-
-// Beginning of Tablet
-
-@media (max-width: 992px) {
-	.container {
-		width: 970px;
+  
+	.header-wrapper .search-wrapper {
+	  display: none;
 	}
-}
-
-// Beginning of Mobile
-
-@media (max-width: 768px) {
-	.container {
-		width: 750px;
+  
+	.header-wrapper .sidebarbtn-wrapper {
+	  display: flex;
+	  margin-left: auto;
 	}
-}
+  
+	.mobile-search {
+	  margin-top:1px;
+	  padding-bottom: 1rem;
+	  display: flex !important;
+  
+	}
+  
+	.logo-wrapper {
+	  margin-right: 1rem;
+	}
+  
+	.sidebarbtn-wrapper .phoneus-btn {
+	  display: inline !important;
+	  font-size: 1.5rem;
+	  margin-top: 5px;
+  
+  
+	}
+  }
+  
+  @media (max-width: 991px) {
+	.container .header-wrapper {
+	  padding-bottom: 0;
+	}
+  
+	.actionbtn-wrapper {
+	  display: none;
+	}
+  
+	.header-wrapper .search-wrapper {
+  
+	  >.searchbtn {
+		border-radius: 0 3px 3px 0 !important;
+	  }
+  
+	  >.search {
+		display: inline;
+		width: 174px;
+		margin-left: 40px;
+	  }
+	}
+	header {
+	  padding-bottom: 20px;
+	}
+  }
+  
+  
+  
+  @media (max-width: 1260px) {
+  
+	.search-wrapper .search {
+	  display: none;
+  
+	}
+  
+	.header-wrapper .search-wrapper {
+	  width: auto;
+  
+	  >.searchbtn {
+		border-radius: 3px 3px 3px 3px;
+		height: 56px;
+	  }
+	}
+  
+  }
+  
+  
+  /*---------- HEADER ------------- */
+  
+  header {
+	position: relative;
+	background-color: #fff;
+	padding-top: 20px;
+	width: 100%;
+	height: auto;
+	z-index: 8;
+	transition: top ease-out .5s;
+  }
+  
+  
+  
+  #net-logo {
+	display: block;
+	width: auto;
+  }
+  
+  .sidebarbtn-wrapper .sidebarbtn {
+	width: 4rem;
+	height: 56px;
+	font-size: 2rem;
+	background-color: #333645;
+	&:focus {
+	  box-shadow: none;
+	}
+  
+	&:hover {
+	  background-color: darken(#333645, 10%);
+	}
+  }
+  
+  .sidebarbtn-wrapper .phoneus-btn {
+	display: none;
+  }
+  
+  .header-wrapper {
+	padding-bottom: 1.3rem;
+	display: flex;
+  
+  }
+  
+  .actionbtn-wrapper {
+	margin-left: auto;
+  }
+  
+  /*---------- MULTI-STYLES ------------- */
+  .search-wrapper,
+  .actionbtn-wrapper,
+  .sidebarbtn-wrapper {
+	align-self: center;
+  }
+  
+  .search-wrapper,
+  .sidebarbtn-wrapper,
+  .btn-contact {
+	margin-left: 20px;
+  }
+  
+  
+  /*---------- ACTION BUTTONS ------------- */
+  .btn-support {
+	color: white;
+	background-color: #4183d7;
+  
+	&:hover {
+	  color: white;
+	  background-color: darken(#4183d7, 10%);
+	}
+  
+	&:focus {
+	  color: white;
+	  background-color: darken(#4183d7, 10%) !important;
+	}
+  }
+  
+  .btn-contact {
+	color: white;
+	background-color: #999aa2;
+	line-height: 46px!important;
+	
+	text-decoration: none!important;
+	&:hover {
+	  color: white;
+	  background-color: darken(#999aa2, 10%);
+	}
+  
+	&:focus {
+	  color: white;
+	  background-color: darken(#999aa2, 10%);
+	}
+  
+   
+  }
+  
+  .actionbtn-wrapper .actionbtn {
+	height: 56px;
+	font-size: 1.125rem;
+	text-align: center;
+  
+	>i {
+	  padding-right: 5px;
+	  font-size: 1.3rem;
+	}
+  }
+  
+  .hamburger-outer {
+	display: block;
+	width: 33px;
+	height: 19px;
+	position: relative;
+	color: white;
+  
+	.hamburger-inner {
+	  background-color: #fff;
+	  width: 33px;
+	  height: 4px;
+	  position: absolute;
+	  display: block;
+	  top: 50%;
+	  margin-top: -1.5px;
+	  transition: 0.4s;
+	}
+  
+	  .top-bar {
+	   
+		background-color: #fff;
+		display: block;
+		top:-10px;
+		width: 33px;
+		height: 4px;
+		position: absolute;
+		transition: 0.4s;
+	  }
+  
+	  .bottom-bar {
+		
+		background-color: #fff;
+		display: block;
+		bottom:-10px;
+		width: 33px;
+		height: 4px;
+		position: absolute;
+		transition: 0.4s;
+	  }
+	}
+  
+  
+  /*---------- SEARCH ------------- */
+  .search-wrapper .searchbtn {
+	color: white;
+	background-color: #999aa2;
+	width: 4rem;
+	font-size: 1.3rem;
+	border-radius: 0 5px 5px 0;
+  
+  }
+  
+  .searchbtn:hover {
+	background-color: darken(#999aa2, 10%);
+  }
+  
+  .search-wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+  
+	>.search {
+	  width: 240px;
+	  height: 56px;
+	  font-size: 14px;
+	  line-height: 1.42857143;
+	  color: #555;
+  
+	  &:focus-visible {
+		outline: none;
+	  }
+  
+	  &:focus {
+		border: 1px solid #5bc0de;
+		outline: 0;
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(91, 192, 222, 0.6);
+  
+  
+	  }
+	}
+  }
+  
+  .mobile-search {
+	display: none;
+  
+	>.search-wrapper-mobile {
+	  display: flex;
+	  flex-wrap: nowrap;
+  
+	  >.form-control {
+		background-color: rgba(0, 0, 0, .1);
+		outline: 1px solid hsla(0, 0%, 100%, .2);
+		border: 2px solid rgba(0, 0, 0, 0.2);
+		transition: none;
+		height: 47px;
+		width: 100%;
+		padding-right: 40px;
+		border-radius: 2px;
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	  }
+  
+  
+	  .searchbtn {
+		background: none;
+		border: none;
+		color: #333645;
+		position: absolute;
+		right: 13px;
+		line-height: 35px;
+		font-weight: 600;
+		font-size: 20px;
+		outline: none;
+	  }
+	}
+  }
+  
+  //hamburger animation
+  
+  
+  .change .top-bar {
+	transform: translate(0, 10px) rotate(-45deg);
+	
+  }
+  
+  .change .hamburger-inner {background-color: inherit;}
+  
+  .change .bottom-bar {
+	transform: translate(0, -10px) rotate(45deg);
+  } 

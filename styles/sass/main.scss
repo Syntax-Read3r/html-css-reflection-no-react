@@ -1,24 +1,13 @@
 
 // Layout Header
-@import "layout/header";
-@import 'layout/main';
-@import "layout/footer";
+@import "layout/reset";
 
 
-@import "layout/grid";
-@import "abstracts/functions";
+
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
 
-// @import "components/navBar";
-@import "components/popup";
-@import "components/card";
-@import "components/feature-box";
-@import "components/form";
-@import "components/story";
-@import "components/composition";
+//Beginning of componets
+
+@import 'components/navBar';

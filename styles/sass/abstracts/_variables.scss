@@ -1,56 +1,51 @@
-// Button Colors
-
-$navbar--button--one: #4183d7;
-$navbar--button--one-hover: #1a6edc;
-$navbar--button--two: #999aa2;
-$navbar--button--two-hover: #6e6f73;
-$button--search--nav: #999aa2;
-$button--search--nav-hover: #6e6f73;
-
-
-// Fonts
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
 
-$default-font: 'Poppins', sans-serif;
 
 
-// Side Menu Colors
+/*---------- VARIABLES ------------- */
 
-$sidemenu--header--bg: #333645;
-$sidemenu--header--text: #deffff;
-$sidemenu--child--bg: #262834;
-$sidemenu--child--text: #deffff;
 
-// Side Menu Fonts
+//website base colour
+$baseclr: #333645;
 
-$sidemenu--header--font: 16px;
-$sidemenu--child--font: 14px;
+//theme colours
+$softwareclr:#67809f;
+$itclr:#4183d7;
+$digitalclr: #2ecc71;
+$telecomsclr: #d64541;
+$webclr: #926fb1;
+$securityclr: #f62459;
+$developerclr: #ce4125;
+$darkitclr: darken($itclr, 25%);
+$darkdigitalclr: darken($digitalclr, 25%);
 
-// Navbar Colors
+//social media colours
+$facebookclr: #3b5998;
+$twitterclr: #00aced;
+$instagramclr: #d93175;
+$linkedinclr: #0077b5;
 
-$top-navbar--bg: white;
-$bottom-navbar--bg: #333645;
+//maps
+$services: ('software', 'it', 'digital', 'telecoms', 'web', 'security', 'developer');
+$website-clrs: (
+  'software': $softwareclr, 
+  'it': $itclr, 
+  'digital': $digitalclr,
+  'telecoms':  $telecomsclr, 
+  'web': $webclr, 
+  'security': $securityclr, 
+  'developer': $developerclr);
 
-// Website Colors
+$news-clrs: (
+  '1' : $digitalclr,
+  '2' : $softwareclr,
+  '3' : $webclr
+);
 
-$website--bg: #333645;
-$website--colorOne: #67809f;
-$website--colorOne-b: #50637a;
-$website--colorTwo: #568ed7;
-$website--colorTwo-b: #4183d7;
-$website--colorThree: #2ecc71;
-$website--colorFour: #d64541;
-$website--colorFive: #926fb1;
-$website--colorSix: #f62459;
-$website--colorSeven: #ce4125;
-
-$webisteColors: (
-    'sofware': $website--colorOne,
-    'it': $website--colorTwo,
-    'digital': $website--colorThree,
-    'telecoms': $website--colorFour,
-    'web': $website--colorFive,
-    'security': $website--colorSix,
-    'developer': $website--colorSeven
-)
+$sm-clrs: (
+  '1' : $facebookclr,
+  '2' : $twitterclr,
+  '3' : $instagramclr,
+  '4' : $linkedinclr
+);

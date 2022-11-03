@@ -1,3 +1,38 @@
-@mixin websiteColor($property, $service) {
-    #{$property}: map-get($websiteColors, $service);
+/*---------- _NABAR.SCSS + _SERVICES.SCSS ------------- */
+@mixin website-clr-mx($property, $service) {
+    #{$property}:map-get($website-clrs, #{$service});
+}
+
+/*---------- _FOOTER.SCSS  ------------- */
+
+@mixin sm-clr-mx($i) {
+    
+    background-color: map-get($map: $sm-clrs, $key: #{$i});
+    border-radius: 50%;
+    
+}
+/*---------- _NEWS.SCSS  ------------- */
+
+@mixin news-clr-mx($property, $i) {
+   #{$property}: map-get($map: $news-clrs, $key:#{$i} );
+  }
+
+/*---------- _SIDEBARNAV.SCSS ------------- */
+
+@mixin sidebar-nav-mobiletags () {
+    font-size: 1.125rem;
+    padding: 19px 0 18px;
+    border-radius: 3px;
+    outline: 1px solid rgba(0, 0, 0, .25);
+    border: 1px solid hsla(0, 0%, 100%, .1);
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@mixin sidebar-nav-highlight () {
+
+    background-color: hsla(0, 0%, 100%, .05);
 }
