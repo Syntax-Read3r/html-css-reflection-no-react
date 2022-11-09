@@ -2,12 +2,16 @@
 // Layout Header
 @import "layout/reset";
 
-
-
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
 
-//Beginning of componets
+
+@import 'layout/header';
+@import 'layout/footer';
+
+
+//Beginning of components
 
 @import 'components/navBar';
+@import 'components/banner';
