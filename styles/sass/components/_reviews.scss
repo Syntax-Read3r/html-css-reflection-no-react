@@ -1,0 +1,122 @@
+/*---------- MEDIA QUERIES------------- */
+
+@media (max-width: 992px) {
+    .welcome-bio {
+      margin-bottom: 3rem;
+    }
+  }
+  
+  @media (max-width: 1260px) {
+   .client-bio span.btn-review {
+    margin-top: 0;
+   }
+  
+  }
+  
+  /*---------- BIO ------------- */
+  
+  .bio-wrap {
+    height: auto;
+    background-color: $baseclr;
+    color: #fff;
+  
+    >.section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+  
+  .welcome-bio,
+  .client-bio {
+    strong {
+      font-weight: 600;
+    }
+  
+    >p.h1 {
+      margin-top: -8px;
+      margin-bottom: 40px;
+  
+    }
+    > p {
+      margin-bottom: 25px;
+    }
+  
+  }
+  
+  span.btn-bio {
+    background-color: darken($baseclr, 5%);
+    padding: 10px 20px;
+    border-radius: 5px;
+  
+    &:hover {
+      background-color: black;
+    }
+  
+    >.readmore {
+      font-size: 1.3rem;
+      margin-left: 0.5rem;
+  
+      >i {
+        vertical-align: -.125em;
+        font-size: 2rem;
+      }
+    }
+  }
+  
+  span.btn-review {
+    width: auto;
+    margin-bottom: 1rem;
+    margin-top: 55px;
+    margin-right: 3px;
+    border-radius: 6px;
+    padding: 10px 20px;
+  
+    >.reviews {
+      font-size: 20px;
+  
+      >i {
+        font-size: 25px;
+      }
+    }
+  
+  }
+  
+  .client {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: #a3a8ac;
+    font-weight: 600;
+  
+  }
+  
+  .starbar {
+    margin-top: -10px;
+    margin-bottom: 1rem;
+  
+    >i {
+      font-size: 3rem;
+    }
+  }
+  
+  .client-quote {
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-style: italic;
+  
+  }
+  
+  .btn-google {
+    background-color: #4183d7;
+  
+    &:hover {
+      background-color: darken(#4183d7, 10%)
+    }
+  }
+  
+  .btn-tp {
+    background-color: #00b67b;
+  
+    &:hover {
+      background-color: darken(#00b67b, 10%);
+    }
+  }

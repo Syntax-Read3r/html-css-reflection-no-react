@@ -1061,4 +1061,125 @@ header {
 .service-list .block > span.icon i {
   font-size: 2rem;
   line-height: 62px;
+}
+
+.cara-wrap {
+  position: relative;
+  max-height: 70px;
+  height: 70px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+.cara-wrap .cara-item img {
+  margin: auto;
+  width: auto;
+  height: auto;
+  filter: grayscale(100%);
+}
+.cara-wrap .cara-item img:hover {
+  filter: grayscale(0);
+}
+
+/*---------- MEDIA QUERIES------------- */
+@media (max-width: 992px) {
+  .welcome-bio {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 1260px) {
+  .client-bio span.btn-review {
+    margin-top: 0;
+  }
+}
+/*---------- BIO ------------- */
+.bio-wrap {
+  height: auto;
+  background-color: #333645;
+  color: #fff;
+}
+.bio-wrap > .section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.welcome-bio strong,
+.client-bio strong {
+  font-weight: 600;
+}
+.welcome-bio > p.h1,
+.client-bio > p.h1 {
+  margin-top: -8px;
+  margin-bottom: 40px;
+}
+.welcome-bio > p,
+.client-bio > p {
+  margin-bottom: 25px;
+}
+
+span.btn-bio {
+  background-color: #282b36;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+span.btn-bio:hover {
+  background-color: black;
+}
+span.btn-bio > .readmore {
+  font-size: 1.3rem;
+  margin-left: 0.5rem;
+}
+span.btn-bio > .readmore > i {
+  vertical-align: -0.125em;
+  font-size: 2rem;
+}
+
+span.btn-review {
+  width: auto;
+  margin-bottom: 1rem;
+  margin-top: 55px;
+  margin-right: 3px;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+span.btn-review > .reviews {
+  font-size: 20px;
+}
+span.btn-review > .reviews > i {
+  font-size: 25px;
+}
+
+.client {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #a3a8ac;
+  font-weight: 600;
+}
+
+.starbar {
+  margin-top: -10px;
+  margin-bottom: 1rem;
+}
+.starbar > i {
+  font-size: 3rem;
+}
+
+.client-quote {
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.btn-google {
+  background-color: #4183d7;
+}
+.btn-google:hover {
+  background-color: #286abd;
+}
+
+.btn-tp {
+  background-color: #00b67b;
+}
+.btn-tp:hover {
+  background-color: #008359;
 }/*# sourceMappingURL=main.css.map */

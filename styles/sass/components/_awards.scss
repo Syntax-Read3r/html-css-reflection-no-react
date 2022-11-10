@@ -1,0 +1,25 @@
+.cara-wrap {
+    position: relative;
+    max-height: 70px;
+    height: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    
+  
+   
+      .cara-item {
+       //margin-right: 50px;
+       
+        img {
+          margin: auto;
+          width: auto;
+          height: auto;
+          filter: grayscale(100%);
+  
+          &:hover {
+            filter: grayscale(0);
+          }
+        }
+      }
+    }
