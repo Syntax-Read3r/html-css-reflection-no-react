@@ -1,0 +1,115 @@
+@import '../abstracts/_mixins.scss';
+
+/*---------- LOOPS + MIXINS ------------- */
+@each $service in $services {
+
+  .service-list .block.#{$service}>span.icon {
+    @include website-clr-mx(background-color, #{$service});
+
+  }
+
+  .btn.btn-#{$service} {
+    color: #fff;
+    @include website-clr-mx(background-color, #{$service});
+    @include website-clr-mx(border-color, #{$service});
+
+  }
+
+  .service-list .block.#{$service}:hover {
+    @include website-clr-mx(background-color, #{$service});
+    
+    >span.h2,
+    span.p {
+      color: white;
+    }
+
+    >span span.btn {
+      @include website-clr-mx(color, #{$service});
+      background-color: white;
+    }
+
+    >span.icon {
+      background-color: white;
+
+      >i {
+        @include website-clr-mx(color, #{$service});
+      }
+    }
+  }
+}
+
+/*---------- SERVICES ------------- */
+
+.block {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+  top: 0;
+  
+  transition: background-color .5s linear, top .5s;
+}
+
+
+.service-list {
+  margin-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.service-list .row .col-md-12 .h1 {
+  font-size: 2.7rem;
+  margin-top: -13px;
+  color: $baseclr;
+  >strong {
+    font-weight: 600;
+  }
+
+}
+
+.service-list .block {
+  text-decoration: none;
+  
+  text-align: center;
+  border-radius: 15px;
+  position: relative;
+  top: 0;
+
+  &:hover {
+
+    top: -10px;
+
+  }
+}
+
+.service-list .block>span {
+  display: block;
+}
+
+.service-list .block>span.icon {
+  height: 65px;
+  width: 65px;
+  margin: 0 auto 17px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.service-list .block>span.h2 {
+ 
+  font-size: 1.3rem;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+
+.service-list .block>span.p {
+  font-size: .8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+
+.service-list .block>span.icon i {
+  font-size: 2rem;
+  line-height: 62px;
+}
