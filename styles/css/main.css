@@ -793,4 +793,272 @@ header {
   font-size: 1.625rem;
   line-height: 2.5rem;
   font-weight: 600;
+}
+
+/*---------- _NABAR.SCSS + _SERVICES.SCSS ------------- */
+/*---------- _FOOTER.SCSS  ------------- */
+/*---------- _NEWS.SCSS  ------------- */
+/*---------- _SIDEBARNAV.SCSS ------------- */
+/*---------- LOOPS + MIXINS ------------- */
+.service-list .block.software > span.icon {
+  background-color: #67809f;
+}
+
+.btn.btn-software {
+  color: #fff;
+  background-color: #67809f;
+  border-color: #67809f;
+}
+
+.service-list .block.software:hover {
+  background-color: #67809f;
+}
+.service-list .block.software:hover > span.h2,
+.service-list .block.software:hover span.p {
+  color: white;
+}
+.service-list .block.software:hover > span span.btn {
+  color: #67809f;
+  background-color: white;
+}
+.service-list .block.software:hover > span.icon {
+  background-color: white;
+}
+.service-list .block.software:hover > span.icon > i {
+  color: #67809f;
+}
+
+.service-list .block.it > span.icon {
+  background-color: #4183d7;
+}
+
+.btn.btn-it {
+  color: #fff;
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+
+.service-list .block.it:hover {
+  background-color: #4183d7;
+}
+.service-list .block.it:hover > span.h2,
+.service-list .block.it:hover span.p {
+  color: white;
+}
+.service-list .block.it:hover > span span.btn {
+  color: #4183d7;
+  background-color: white;
+}
+.service-list .block.it:hover > span.icon {
+  background-color: white;
+}
+.service-list .block.it:hover > span.icon > i {
+  color: #4183d7;
+}
+
+.service-list .block.digital > span.icon {
+  background-color: #2ecc71;
+}
+
+.btn.btn-digital {
+  color: #fff;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+.service-list .block.digital:hover {
+  background-color: #2ecc71;
+}
+.service-list .block.digital:hover > span.h2,
+.service-list .block.digital:hover span.p {
+  color: white;
+}
+.service-list .block.digital:hover > span span.btn {
+  color: #2ecc71;
+  background-color: white;
+}
+.service-list .block.digital:hover > span.icon {
+  background-color: white;
+}
+.service-list .block.digital:hover > span.icon > i {
+  color: #2ecc71;
+}
+
+.service-list .block.telecoms > span.icon {
+  background-color: #d64541;
+}
+
+.btn.btn-telecoms {
+  color: #fff;
+  background-color: #d64541;
+  border-color: #d64541;
+}
+
+.service-list .block.telecoms:hover {
+  background-color: #d64541;
+}
+.service-list .block.telecoms:hover > span.h2,
+.service-list .block.telecoms:hover span.p {
+  color: white;
+}
+.service-list .block.telecoms:hover > span span.btn {
+  color: #d64541;
+  background-color: white;
+}
+.service-list .block.telecoms:hover > span.icon {
+  background-color: white;
+}
+.service-list .block.telecoms:hover > span.icon > i {
+  color: #d64541;
+}
+
+.service-list .block.web > span.icon {
+  background-color: #926fb1;
+}
+
+.btn.btn-web {
+  color: #fff;
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
+.service-list .block.web:hover {
+  background-color: #926fb1;
+}
+.service-list .block.web:hover > span.h2,
+.service-list .block.web:hover span.p {
+  color: white;
+}
+.service-list .block.web:hover > span span.btn {
+  color: #926fb1;
+  background-color: white;
+}
+.service-list .block.web:hover > span.icon {
+  background-color: white;
+}
+.service-list .block.web:hover > span.icon > i {
+  color: #926fb1;
+}
+
+.service-list .block.security > span.icon {
+  background-color: #f62459;
+}
+
+.btn.btn-security {
+  color: #fff;
+  background-color: #f62459;
+  border-color: #f62459;
+}
+
+.service-list .block.security:hover {
+  background-color: #f62459;
+}
+.service-list .block.security:hover > span.h2,
+.service-list .block.security:hover span.p {
+  color: white;
+}
+.service-list .block.security:hover > span span.btn {
+  color: #f62459;
+  background-color: white;
+}
+.service-list .block.security:hover > span.icon {
+  background-color: white;
+}
+.service-list .block.security:hover > span.icon > i {
+  color: #f62459;
+}
+
+.service-list .block.developer > span.icon {
+  background-color: #ce4125;
+}
+
+.btn.btn-developer {
+  color: #fff;
+  background-color: #ce4125;
+  border-color: #ce4125;
+}
+
+.service-list .block.developer:hover {
+  background-color: #ce4125;
+}
+.service-list .block.developer:hover > span.h2,
+.service-list .block.developer:hover span.p {
+  color: white;
+}
+.service-list .block.developer:hover > span span.btn {
+  color: #ce4125;
+  background-color: white;
+}
+.service-list .block.developer:hover > span.icon {
+  background-color: white;
+}
+.service-list .block.developer:hover > span.icon > i {
+  color: #ce4125;
+}
+
+/*---------- SERVICES ------------- */
+.block {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  top: 0;
+  transition: background-color 0.5s linear, top 0.5s;
+}
+
+.service-list {
+  margin-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.service-list .row .col-md-12 .h1 {
+  font-size: 2.7rem;
+  margin-top: -13px;
+  color: #333645;
+}
+.service-list .row .col-md-12 .h1 > strong {
+  font-weight: 600;
+}
+
+.service-list .block {
+  text-decoration: none;
+  text-align: center;
+  border-radius: 15px;
+  position: relative;
+  top: 0;
+}
+.service-list .block:hover {
+  top: -10px;
+}
+
+.service-list .block > span {
+  display: block;
+}
+
+.service-list .block > span.icon {
+  height: 65px;
+  width: 65px;
+  margin: 0 auto 17px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.service-list .block > span.h2 {
+  font-size: 1.3rem;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+
+.service-list .block > span.p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+
+.service-list .block > span.icon i {
+  font-size: 2rem;
+  line-height: 62px;
 }/*# sourceMappingURL=main.css.map */
