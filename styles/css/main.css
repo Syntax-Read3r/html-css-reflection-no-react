@@ -532,6 +532,294 @@ header {
   margin-bottom: 1.5rem;
 }
 
+.container {
+  z-index: 999;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1050;
+}
+.modal .modal-dialog {
+  width: 35%;
+  height: 50%;
+  background-color: #fff;
+}
+
+.modal--visible {
+  display: block;
+}
+
+/*---------- _NABAR.SCSS + _SERVICES.SCSS ------------- */
+/*---------- _FOOTER.SCSS  ------------- */
+/*---------- _NEWS.SCSS  ------------- */
+/*---------- _SIDEBARNAV.SCSS ------------- */
+li.software > a > span > i {
+  color: #67809f;
+}
+
+li.it > a > span > i {
+  color: #4183d7;
+}
+
+li.digital > a > span > i {
+  color: #2ecc71;
+}
+
+li.telecoms > a > span > i {
+  color: #d64541;
+}
+
+li.web > a > span > i {
+  color: #926fb1;
+}
+
+li.security > a > span > i {
+  color: #f62459;
+}
+
+li.developer > a > span > i {
+  color: #ce4125;
+}
+
+@media (max-width: 992px) {
+  li.sidebar-mobile-view,
+li#sidebar-contact,
+li.sidebar-submenu-head:last-child {
+    display: block !important;
+  }
+  .sidebarnav {
+    width: 275px !important;
+  }
+  .sidebarnav > .sidebarnav-wrap > ul:first-child {
+    margin-bottom: 20px !important;
+  }
+  .sidebar-wide > .sidebar-submenu-head:first-child {
+    display: none;
+  }
+}
+.nav-open .sidebarnav {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+.nav-open #container {
+  transform: translateX(-350px);
+  -webkit-transform: translateX(-350px);
+  -moz-transform: translateX(-350px);
+  -ms-transform: translateX(-350px);
+  -o-transform: translateX(-350px);
+}
+
+#container {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.sidebarnav {
+  direction: rtl;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  height: 100%;
+  background: #333645;
+  width: 350px;
+  overflow: auto;
+  color: white;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  transform: translateX(350px);
+  -webkit-transform: translateX(350px);
+  -moz-transform: translateX(350px);
+  -ms-transform: translateX(350px);
+  -o-transform: translateX(350px);
+  transition: all 0.5s ease-in-out;
+}
+.sidebarnav > .sidebarnav-wrap {
+  height: auto;
+  direction: ltr;
+}
+.sidebarnav > .sidebarnav-wrap > ul {
+  margin: -20px 0 0 0;
+  padding-top: 20px;
+  padding: 21px;
+}
+.sidebarnav > .sidebarnav-wrap > ul > li {
+  padding: 20px 0 0;
+}
+.sidebarnav > .sidebarnav-wrap > ul > li > a > span {
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+  display: block;
+}
+.sidebarnav > .sidebarnav-wrap > ul > li > a > small {
+  display: block;
+  font-size: 0.625rem;
+  padding-bottom: 2px;
+}
+
+li#sidebar-contact {
+  font-size: 1.125rem;
+  padding: 19px 0 18px;
+  margin-top: 20px;
+  border-radius: 3px;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid hsla(0deg, 0%, 100%, 0.1);
+}
+li#sidebar-contact:hover {
+  background-color: hsla(0deg, 0%, 100%, 0.05);
+}
+li#sidebar-contact > a {
+  text-decoration: none;
+}
+
+li.sidebar-mobile-view > a {
+  font-size: 1.125rem;
+  padding: 19px 0 18px;
+  border-radius: 3px;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid hsla(0deg, 0%, 100%, 0.1);
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+li.sidebar-mobile-view > a:hover {
+  background-color: hsla(0deg, 0%, 100%, 0.05);
+}
+
+ul.sidebar-menu {
+  margin-top: 20px;
+  border-radius: 3px;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+}
+ul.sidebar-menu > li {
+  color: #666;
+}
+ul.sidebar-menu > li > a {
+  border-top: 1px solid hsla(0deg, 0%, 100%, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+ul.sidebar-wide {
+  padding: 0 !important;
+  text-align: left;
+  margin-bottom: 0 !important;
+}
+ul.sidebar-wide > li.sidebar-submenu-head {
+  border-top: 1px solid hsla(0deg, 0%, 100%, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 0 !important;
+}
+ul.sidebar-wide > li.sidebar-submenu-head > a {
+  display: block;
+  color: #fff;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  line-height: 1;
+  position: relative;
+}
+ul.sidebar-wide > li.sidebar-submenu-head > a:hover {
+  background-color: hsla(0deg, 0%, 100%, 0.05);
+}
+ul.sidebar-wide > li.sidebar-submenu-head > ul.sidebar-submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.sidebar-wide > li.sidebar-submenu-head > ul.sidebar-submenu > li {
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+}
+ul.sidebar-wide > li.sidebar-submenu-head > ul.sidebar-submenu > li > a {
+  border-top: 1px solid hsla(0deg, 0%, 100%, 0.05);
+  display: block;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+ul.sidebar-wide > li.sidebar-submenu-head > ul.sidebar-submenu > li > a > i {
+  font-size: 0.5rem;
+  padding-right: 1rem;
+}
+
+li.sidebar-mobile-view,
+li#sidebar-contact,
+li.sidebar-submenu-head:last-child {
+  display: none;
+}
+
+#sidebar-lock {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  z-index: 12;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin-right: auto;
+  overflow: hidden;
+  -webkit-animation-name: lockoutBackground;
+          animation-name: lockoutBackground;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  transition: all 0.5s;
+}
+
+.sidebar-color {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@-webkit-keyframes lockoutBackground {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes lockoutBackground {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
 /*---------- _NABAR.SCSS + _SERVICES.SCSS ------------- */
 /*---------- _FOOTER.SCSS  ------------- */
 /*---------- _NEWS.SCSS  ------------- */

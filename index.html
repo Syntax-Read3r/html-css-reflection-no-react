@@ -49,635 +49,886 @@
 		</title>
 	</head>
 	<body>
+		<!-- Create a cookie modal
+		<div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="cookieModalLabel">Cookie Policy</h5>
+					</div>
+					<div class="modal-body">
+						<p>
+							We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- [ ] Start of Main Content -->
 		<div id="container">
-			<!-- [ ] Start of Header -->
-			<header class="header">
-				<div class="sticky">
-					<div class="container">
-						<!-- [ ] start of header--container -->
-						<div class="header--container">
-							<div class="logo-wrapper">
-								<a href="index.php">
-									<img
-										id="net-logo"
-										class="img-fluid"
-										src="images/logo2.png"
-										alt="Netmatters Logo"
-									/>
-								</a>
-							</div>
-							<div class="ctaBtn-wrapper">
-								<button class="btn btn-support ctaBtn" type="submit">
-									<i class="bi bi-mouse2-fill"></i>SUPPORT</button
-								><a
-									href="contact.php"
-									class="btn btn-contact ctaBtn"
-									type="submit"
-									><i class="bi bi-send"></i>CONTACT</a
-								>
-							</div>
-							<div class="search-wrapper">
-								<input
-									type="text"
-									class="form-control search"
-									placeholder="Search.."
-								/>
-								<button class="btn searchbtn" type="button">
-									<i class="bi bi-search"></i>
-								</button>
-							</div>
-							<div class="sidebarbtn-wrapper">
-								<a class="btn phoneus-btn"
-									><i class="bi bi-telephone-fill"></i
-								></a>
-								<button class="btn sidebarbtn" type="submit">
-									<span class="hamburger-outer">
-										<span class="hamburger-inner"
-											><span class="top-bar"></span
-											><span class="bottom-bar"></span></span
-									></span>
-								</button>
-							</div>
-						</div>
-						<!-- [x] end of header--container -->
-						<!-- [ ] beginning of mobileSearch btn -->
-						<div class="row mobile-search">
-							<div class="search-wrapper-mobile">
-								<input
-									type="text"
-									class="form-control search"
-									placeholder="Search.."
-								/>
-								<button class="btn searchbtn" type="button">
-									<i class="bi bi-search"></i>
-								</button>
-							</div>
-						</div>
-						<!-- [x] end of mobileSearch btn -->
-					</div>
-					<!--[ ] Start of navbar -->
-					<div class="nav-wrap">
+			<div class="overlay">
+				<!-- [ ] Start of Header -->
+				<header class="header">
+					<div class="sticky">
 						<div class="container">
-							<div class="nav-grid">
-								<div class="nav-grid-item software dropdown show">
-									<!-- [ ] start of li itemOne -->
-									<a
-										class="nav-button text-center"
-										href="#"
-										role="button"
-										data-toggle="dropdown"
-									>
-										<i class="bi bi-grid-3x3-gap-fill"></i>
-										<small>BESPOKE</small>
-										<p>SOFTWARE</p>
+							<!-- [ ] start of header--container -->
+							<div class="header--container">
+								<div class="logo-wrapper">
+									<a href="index.php">
+										<img
+											id="net-logo"
+											class="img-fluid"
+											src="images/logo2.png"
+											alt="Netmatters Logo"
+										/>
 									</a>
-									<div class="dropdown-menu text-center">
-										<ul>
-											<li>
-												<a href="#">Workflow</a>
-											</li>
-											<li>
-												<a href="#">Automation</a>
-											</li>
-											<li>
-												<a href="#">Integration </a>
-											</li>
-											<li>
-												<a href="#"> Databases </a>
-											</li>
-											<li>
-												<a href="#"> SharePoint </a>
-											</li>
-											<li>
-												<a href="#"> Management </a>
-											</li>
-											<li>
-												<a href="#"> Navision </a>
-											</li>
-										</ul>
-									</div>
 								</div>
-								<!-- [x] end of li itemOne -->
+								<div class="ctaBtn-wrapper">
+									<button class="btn btn-support ctaBtn" type="submit">
+										<i class="bi bi-mouse2-fill"></i>SUPPORT</button
+									><a
+										href="contact.php"
+										class="btn btn-contact ctaBtn"
+										type="submit"
+										><i class="bi bi-send"></i>CONTACT</a
+									>
+								</div>
+								<div class="search-wrapper">
+									<input
+										type="text"
+										class="form-control search"
+										placeholder="Search.."
+									/>
+									<button class="btn searchbtn" type="button">
+										<i class="bi bi-search"></i>
+									</button>
+								</div>
+								<div class="sidebarbtn-wrapper">
+									<a class="btn phoneus-btn"
+										><i class="bi bi-telephone-fill"></i
+									></a>
+									<button class="btn sidebarbtn" type="submit">
+										<span class="hamburger-outer">
+											<span class="hamburger-inner"
+												><span class="top-bar"></span
+												><span class="bottom-bar"></span></span
+										></span>
+									</button>
+								</div>
+							</div>
+							<!-- [x] end of header--container -->
+							<!-- [ ] beginning of mobileSearch btn -->
+							<div class="row mobile-search">
+								<div class="search-wrapper-mobile">
+									<input
+										type="text"
+										class="form-control search"
+										placeholder="Search.."
+									/>
+									<button class="btn searchbtn" type="button">
+										<i class="bi bi-search"></i>
+									</button>
+								</div>
+							</div>
+							<!-- [x] end of mobileSearch btn -->
+						</div>
+						<!--[ ] Start of navbar -->
+						<div class="nav-wrap">
+							<div class="container">
+								<div class="nav-grid">
+									<div class="nav-grid-item software dropdown show">
+										<!-- [ ] start of li itemOne -->
+										<a
+											class="nav-button text-center"
+											href="#"
+											role="button"
+											data-toggle="dropdown"
+										>
+											<i class="bi bi-grid-3x3-gap-fill"></i>
+											<small>BESPOKE</small>
+											<p>SOFTWARE</p>
+										</a>
+										<div class="dropdown-menu text-center">
+											<ul>
+												<li>
+													<a href="#">Workflow</a>
+												</li>
+												<li>
+													<a href="#">Automation</a>
+												</li>
+												<li>
+													<a href="#">Integration </a>
+												</li>
+												<li>
+													<a href="#"> Databases </a>
+												</li>
+												<li>
+													<a href="#"> SharePoint </a>
+												</li>
+												<li>
+													<a href="#"> Management </a>
+												</li>
+												<li>
+													<a href="#"> Navision </a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- [x] end of li itemOne -->
 
-								<!-- [ ] start of li itemTwo -->
-								<div class="nav-grid-item it dropdown show">
-									<a
-										class="nav-button text-center"
-										href="#"
-										role="button"
-										data-toggle="dropdown"
-									>
-										<i class="bi bi-display"></i>
-										<small>IT</small>
-										<p>SUPPORT</p>
-									</a>
-									<div class="dropdown-menu text-center">
-										<ul>
-											<li>
-												<a href="#">Managed IT</a>
-											</li>
-											<li>
-												<a href="#">Business IT</a>
-											</li>
-											<li>
-												<a href="#">Office 365</a>
-											</li>
-											<li>
-												<a href="#">Consultancy</a>
-											</li>
-											<li>
-												<a href="#">Cloud Provider</a>
-											</li>
-											<li>
-												<a href="#">Data Backup</a>
-											</li>
-										</ul>
+									<!-- [ ] start of li itemTwo -->
+									<div class="nav-grid-item it dropdown show">
+										<a
+											class="nav-button text-center"
+											href="#"
+											role="button"
+											data-toggle="dropdown"
+										>
+											<i class="bi bi-display"></i>
+											<small>IT</small>
+											<p>SUPPORT</p>
+										</a>
+										<div class="dropdown-menu text-center">
+											<ul>
+												<li>
+													<a href="#">Managed IT</a>
+												</li>
+												<li>
+													<a href="#">Business IT</a>
+												</li>
+												<li>
+													<a href="#">Office 365</a>
+												</li>
+												<li>
+													<a href="#">Consultancy</a>
+												</li>
+												<li>
+													<a href="#">Cloud Provider</a>
+												</li>
+												<li>
+													<a href="#">Data Backup</a>
+												</li>
+											</ul>
+										</div>
 									</div>
-								</div>
-								<!-- [x] end of li itemTwo -->
+									<!-- [x] end of li itemTwo -->
 
-								<!-- [ ] start of li itemThree -->
-								<div class="nav-grid-item digital dropdown show">
-									<a
-										class="nav-button text-center"
-										href="#"
-										role="button"
-										data-toggle="dropdown"
-									>
-										<i class="bi bi-reception-3"></i>
-										<small>DIGITAL</small>
-										<p>MARKETING</p>
-									</a>
-									<div class="dropdown-menu text-center">
-										<ul>
-											<li>
-												<a href="#">Search (SEO)</a>
-											</li>
-											<li>
-												<a href="#">Paid (PPC)</a>
-											</li>
-											<li>
-												<a href="#">Conversion (CRO)</a>
-											</li>
-											<li>
-												<a href="#">Email</a>
-											</li>
-											<li>
-												<a href="#">Social Media</a>
-											</li>
-											<li>
-												<a href="#">Content</a>
-											</li>
-										</ul>
+									<!-- [ ] start of li itemThree -->
+									<div class="nav-grid-item digital dropdown show">
+										<a
+											class="nav-button text-center"
+											href="#"
+											role="button"
+											data-toggle="dropdown"
+										>
+											<i class="bi bi-reception-3"></i>
+											<small>DIGITAL</small>
+											<p>MARKETING</p>
+										</a>
+										<div class="dropdown-menu text-center">
+											<ul>
+												<li>
+													<a href="#">Search (SEO)</a>
+												</li>
+												<li>
+													<a href="#">Paid (PPC)</a>
+												</li>
+												<li>
+													<a href="#">Conversion (CRO)</a>
+												</li>
+												<li>
+													<a href="#">Email</a>
+												</li>
+												<li>
+													<a href="#">Social Media</a>
+												</li>
+												<li>
+													<a href="#">Content</a>
+												</li>
+											</ul>
+										</div>
 									</div>
-								</div>
-								<!-- [x] end of li itemThree -->
+									<!-- [x] end of li itemThree -->
 
-								<!-- [ ] start of li itemFour -->
-								<div class="nav-grid-item telecoms dropdown show">
-									<a
-										class="nav-button text-center"
-										href="#"
-										role="button"
-										data-toggle="dropdown"
-									>
-										<i class="bi bi-telephone-plus-fill"></i>
-										<small>TELECOMS</small>
-										<p>SERVICES</p>
-									</a>
-									<div class="dropdown-menu text-center">
-										<ul>
-											<li>
-												<a href="#">Business Mobile</a>
-											</li>
-											<li>
-												<a href="#">Hosted VoIP</a>
-											</li>
-											<li>
-												<a href="#">Business VoIP</a>
-											</li>
-											<li>
-												<a href="#">Business Broadband</a>
-											</li>
-											<li>
-												<a href="#">Leased Line</a>
-											</li>
-											<li>
-												<a href="#">3CX Systems</a>
-											</li>
-										</ul>
+									<!-- [ ] start of li itemFour -->
+									<div class="nav-grid-item telecoms dropdown show">
+										<a
+											class="nav-button text-center"
+											href="#"
+											role="button"
+											data-toggle="dropdown"
+										>
+											<i class="bi bi-telephone-plus-fill"></i>
+											<small>TELECOMS</small>
+											<p>SERVICES</p>
+										</a>
+										<div class="dropdown-menu text-center">
+											<ul>
+												<li>
+													<a href="#">Business Mobile</a>
+												</li>
+												<li>
+													<a href="#">Hosted VoIP</a>
+												</li>
+												<li>
+													<a href="#">Business VoIP</a>
+												</li>
+												<li>
+													<a href="#">Business Broadband</a>
+												</li>
+												<li>
+													<a href="#">Leased Line</a>
+												</li>
+												<li>
+													<a href="#">3CX Systems</a>
+												</li>
+											</ul>
+										</div>
 									</div>
-								</div>
-								<!-- [x] end of li itemFour -->
+									<!-- [x] end of li itemFour -->
 
-								<!-- [ ] start of li itemFive -->
-								<div class="nav-grid-item web dropdown show">
-									<a
-										class="nav-button text-center"
-										href="#"
-										role="button"
-										data-toggle="dropdown"
-									>
-										<i class="bi bi-code-slash"></i>
-										<small>WEB</small>
-										<p>DESIGN</p>
-									</a>
-									<div class="dropdown-menu text-center">
-										<ul>
-											<li>
-												<a href="#">Stylish Websites</a>
-											</li>
-											<li>
-												<a href="#">eCommerce Stores</a>
-											</li>
-											<li>
-												<a href="#">Branding</a>
-											</li>
-											<li>
-												<a href="#">Apps</a>
-											</li>
-											<li>
-												<a href="#">Web Hosting</a>
-											</li>
-											<li>
-												<a href="#">Pay Monthly Websites</a>
-											</li>
-										</ul>
+									<!-- [ ] start of li itemFive -->
+									<div class="nav-grid-item web dropdown show">
+										<a
+											class="nav-button text-center"
+											href="#"
+											role="button"
+											data-toggle="dropdown"
+										>
+											<i class="bi bi-code-slash"></i>
+											<small>WEB</small>
+											<p>DESIGN</p>
+										</a>
+										<div class="dropdown-menu text-center">
+											<ul>
+												<li>
+													<a href="#">Stylish Websites</a>
+												</li>
+												<li>
+													<a href="#">eCommerce Stores</a>
+												</li>
+												<li>
+													<a href="#">Branding</a>
+												</li>
+												<li>
+													<a href="#">Apps</a>
+												</li>
+												<li>
+													<a href="#">Web Hosting</a>
+												</li>
+												<li>
+													<a href="#">Pay Monthly Websites</a>
+												</li>
+											</ul>
+										</div>
 									</div>
-								</div>
-								<!-- [x] end of li itemFive -->
+									<!-- [x] end of li itemFive -->
 
-								<!-- [ ] start of li itemSix -->
-								<div class="nav-grid-item security dropdown show">
-									<a
-										class="nav-button text-center"
-										href="#"
-										role="button"
-										data-toggle="dropdown"
-									>
-										<i class="bi bi-shield-lock-fill"></i>
-										<small>CYBER</small>
-										<p>SECURITY</p>
-									</a>
-									<div class="dropdown-menu text-center">
-										<ul>
-											<li>
-												<a href="#">Assessment</a>
-											</li>
-											<li>
-												<a href="#">Management</a>
-											</li>
-											<li>
-												<a href="#">Penetration Testing</a>
-											</li>
-											<li>
-												<a href="#">Cyber Essentials</a>
-											</li>
-											<li>
-												<a href="#">PCI/DSS</a>
-											</li>
-											<li>
-												<a href="#">Hacker Prevention</a>
-											</li>
-										</ul>
+									<!-- [ ] start of li itemSix -->
+									<div class="nav-grid-item security dropdown show">
+										<a
+											class="nav-button text-center"
+											href="#"
+											role="button"
+											data-toggle="dropdown"
+										>
+											<i class="bi bi-shield-lock-fill"></i>
+											<small>CYBER</small>
+											<p>SECURITY</p>
+										</a>
+										<div class="dropdown-menu text-center">
+											<ul>
+												<li>
+													<a href="#">Assessment</a>
+												</li>
+												<li>
+													<a href="#">Management</a>
+												</li>
+												<li>
+													<a href="#">Penetration Testing</a>
+												</li>
+												<li>
+													<a href="#">Cyber Essentials</a>
+												</li>
+												<li>
+													<a href="#">PCI/DSS</a>
+												</li>
+												<li>
+													<a href="#">Hacker Prevention</a>
+												</li>
+											</ul>
+										</div>
 									</div>
-								</div>
-								<!-- [x] end of li itemSix -->
+									<!-- [x] end of li itemSix -->
 
-								<!-- [ ] start of li itemSeven -->
-								<div class="nav-grid-item developer dropdown show">
-									<a
-										class="nav-button text-center"
-										href="#"
-										role="button"
-										data-toggle="dropdown"
-									>
-										<i class="bi bi-mortarboard-fill"></i>
-										<small>DEVELOPER</small>
-										<p>COURSES</p>
-									</a>
-									<div class="dropdown-menu text-center">
-										<ul>
-											<li>
-												<a href="#">Train For A Career in Tech</a>
-											</li>
-											<li>
-												<a href="#">Scion Scheme Frequently Asked Questions</a>
-											</li>
-											<li>
-												<a href="#">Scion Collaborators</a>
-											</li>
-										</ul>
+									<!-- [ ] start of li itemSeven -->
+									<div class="nav-grid-item developer dropdown show">
+										<a
+											class="nav-button text-center"
+											href="#"
+											role="button"
+											data-toggle="dropdown"
+										>
+											<i class="bi bi-mortarboard-fill"></i>
+											<small>DEVELOPER</small>
+											<p>COURSES</p>
+										</a>
+										<div class="dropdown-menu text-center">
+											<ul>
+												<li>
+													<a href="#">Train For A Career in Tech</a>
+												</li>
+												<li>
+													<a href="#"
+														>Scion Scheme Frequently Asked Questions</a
+													>
+												</li>
+												<li>
+													<a href="#">Scion Collaborators</a>
+												</li>
+											</ul>
+										</div>
 									</div>
+									<!-- [x] end of li itemSeven -->
 								</div>
-								<!-- [x] end of li itemSeven -->
+							</div>
+						</div>
+
+						<!--[x] end of navbar -->
+					</div>
+				</header>
+				<!-- [x] End of Header -->
+
+				<!-- [ ] Start of Banner -->
+				<div class="bannerwrap">
+					<div class="imgWrapper">
+						<div class="bannerImage">
+							<div class="container img-text">
+								<p class="h1">
+									The East Of England's Leading Technology Company
+								</p>
+								<p class="img-subtext">
+									Performance-driven digital and technology services<br />
+									with complete transparency.
+								</p>
 							</div>
 						</div>
 					</div>
-
-					<!--[x] end of navbar -->
 				</div>
-			</header>
-			<!-- [x] End of Header -->
+				<!-- [x] End of Banner -->
 
-			<!-- [ ] Start of Banner -->
-			<div class="bannerwrap">
-				<div class="imgWrapper">
-					<div class="bannerImage">
-						<div class="container img-text">
-							<p class="h1">The East Of England's Leading Technology Company</p>
-							<p class="img-subtext">
-								Performance-driven digital and technology services<br />
-								with complete transparency.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- [x] End of Banner -->
-
-			<!-- [ ] Start of ourServices -->
-			<div class="container service-list">
-				<div class="row">
-					<div class="col-md-12">
-						<p class="h1"><strong>Our Services</strong></p>
-					</div>
-
-					<div class="col-lg-4">
-						<a class="block software" href="#">
-							<span class="icon"><i class="bi bi-grid-3x3-gap-fill"></i></span>
-							<span class="h2">Bespoke Software</span>
-							<span class="p"
-								>Tailored software solutions to improve business productivity
-								and online profits.</span
-							><br />
-							<span class="btn-service"
-								><span class="btn btn-software">Read more</span></span
-							>
-						</a>
-					</div>
-
-					<div class="col-lg-4">
-						<a class="block it" href="#">
-							<span class="icon"><i class="bi bi-display"></i></span>
-							<span class="h2">It Support</span>
-							<span class="p"
-								>Remotely managed IT services that is catered yo your businesses
-								needs, adds value & reduces costs.</span
-							>
-							<span class="btn-service"
-								><span class="btn btn-it">Read More</span></span
-							>
-						</a>
-					</div>
-
-					<div class="col-lg-4">
-						<a class="block digital" href="#">
-							<span class="icon"><i class="bi bi-reception-3"></i></span>
-							<span class="h2">Digital Marketing</span>
-							<span class="p"
-								>Driven brand awareness & ROI through creative digital marketing
-								campaigns.</span
-							><br />
-							<span class="btn-service"
-								><span class="btn btn-digital">Read More</span></span
-							>
-						</a>
-					</div>
-
-					<div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
-						<a class="block telecoms" href="#">
-							<span class="icon"><i class="bi bi-telephone-plus-fill"></i></span
-							><br />
-							<span class="h2">Telecoms Services</span>
-							<span class="p"
-								>Stay connected with bespoke telecoms solutions when you need it
-								most.</span
-							>
-							<span class="btn-service"
-								><span class="btn btn-telecoms">Read More</span></span
-							>
-						</a>
-					</div>
-
-					<div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
-						<a class="block web" href="#">
-							<span class="icon"><i class="bi bi-code-slash"></i></span><br />
-							<span class="h2">Web Design</span>
-							<span class="p"
-								>User-centric design for businesses looking to make a lasting
-								impression.</span
-							>
-							<span class="btn-service"
-								><span class="btn btn-web">Read More</span></span
-							>
-						</a>
-					</div>
-
-					<div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
-						<a class="block security" href="#">
-							<span class="icon"><i class="bi bi-shield-lock-fill"></i></span
-							><br />
-							<span class="h2">Cyber Security</span>
-							<span class="p"
-								>Ensuring your online business stays secure 24/7 365 days of the
-								year</span
-							>
-							<span class="btn-service"
-								><span class="btn btn-security">Read More</span></span
-							>
-						</a>
-					</div>
-
-					<div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
-						<a class="block developer" href="#">
-							<span class="icon"><i class="bi bi-mortarboard-fill h5"></i></span
-							><br />
-							<span class="h2">Developer Training</span>
-							<span class="p"
-								>Have you considered a career in web development but you aren't
-								sure where to start?</span
-							>
-							<span class="btn-service"
-								><span class="btn btn-developer">Read More</span></span
-							>
-						</a>
-					</div>
-
-					<!--end of cards -->
-				</div>
-			</div>
-			<!-- [x] End of ourServices -->
-
-			<!-- [ ] Start of awards -->
-			<div class="cara-wrap owl-carousel">
-				<div class="cara-item item">
-					<img src="images/award-img1b.jpg" alt="Royal Training" />
-				</div>
-				<div class="cara-item item">
-					<img src="images/award-img2b.jpg" alt="Future 50" />
-				</div>
-				<div class="cara-item item">
-					<img src="images/award-img3b.jpg" alt="QMS" />
-				</div>
-				<div class="cara-item item">
-					<img src="images/award-img4b.jpg" alt="Skills of tomorrow" />
-				</div>
-				<div class="cara-item item">
-					<img src="images/award-img5b.jpg alt="Google Partner">
-				</div>
-				<div class="cara-item item">
-					<img src="images/award-img6b.jpg" alt="Investing in Future" />
-				</div>
-				<div class="cara-item item">
-					<img src="images/award-img11b.jpg" alt="Norfolk Carbon Charter" />
-				</div>
-				<div class="cara-item item">
-					<img src="images/award-img8b.jpg" alt="PPC" />
-				</div>
-			</div>
-			<!-- [x] End of awards -->
-
-			<!-- [ ] Start of reviews -->
-			<div class="bio-wrap">
-				<div class="container section">
+				<!-- [ ] Start of ourServices -->
+				<div class="container service-list">
 					<div class="row">
-						<div class="col-md-12 col-lg-6 welcome-bio">
-							<p class="h1"><strong>Welcome To Netmatters</strong></p>
-							<p>
-								<strong
-									>Netmatters is a leading <a href="#">Bespoke Software</a>,
-									<a href="#">IT Support</a>, and
-									<a href="#">Digital Marketing</a> agency based in the East of
-									England with offices in <a href="#">Cambridge</a>,
-									<a href="#">Wymondham</a> and
-									<a href="#">Great Yarmouth</a></strong
-								>.
-							</p>
-							<p>
-								We aren't tied into contracts with third-party providers, so you
-								know that our recommendations for your business are based purley
-								with one benefit in mind: to help improve your business with the
-								most appropriate solutions.
-							</p>
-							<p>
-								We pride ourselves on being an ethical business and have a
-								unique business offering and cost model that ensures you get the
-								most from our relationship in an upfront manner.
-							</p>
-							<span class="btn btn-bio"
-								><span class="readmore"
-									>Read more <i class="bi bi-arrow-right-short"></i></span
-							></span>
+						<div class="col-md-12">
+							<p class="h1"><strong>Our Services</strong></p>
 						</div>
-						<div class="col-md-12 col-lg-6 client-bio">
-							<p class="h1"><strong>What Our Clients Think</strong></p>
-							<div class="starbar">
-								<i class="bi bi-star-fill text-warning"></i>
-								<i class="bi bi-star-fill text-warning"></i>
-								<i class="bi bi-star-fill text-warning"></i>
-								<i class="bi bi-star-fill text-warning"></i>
-								<i class="bi bi-star-fill text-warning"></i>
+
+						<div class="col-lg-4">
+							<a class="block software" href="#">
+								<span class="icon"
+									><i class="bi bi-grid-3x3-gap-fill"></i
+								></span>
+								<span class="h2">Bespoke Software</span>
+								<span class="p"
+									>Tailored software solutions to improve business productivity
+									and online profits.</span
+								><br />
+								<span class="btn-service"
+									><span class="btn btn-software">Read more</span></span
+								>
+							</a>
+						</div>
+
+						<div class="col-lg-4">
+							<a class="block it" href="#">
+								<span class="icon"><i class="bi bi-display"></i></span>
+								<span class="h2">It Support</span>
+								<span class="p"
+									>Remotely managed IT services that is catered yo your
+									businesses needs, adds value & reduces costs.</span
+								>
+								<span class="btn-service"
+									><span class="btn btn-it">Read More</span></span
+								>
+							</a>
+						</div>
+
+						<div class="col-lg-4">
+							<a class="block digital" href="#">
+								<span class="icon"><i class="bi bi-reception-3"></i></span>
+								<span class="h2">Digital Marketing</span>
+								<span class="p"
+									>Driven brand awareness & ROI through creative digital
+									marketing campaigns.</span
+								><br />
+								<span class="btn-service"
+									><span class="btn btn-digital">Read More</span></span
+								>
+							</a>
+						</div>
+
+						<div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
+							<a class="block telecoms" href="#">
+								<span class="icon"
+									><i class="bi bi-telephone-plus-fill"></i></span
+								><br />
+								<span class="h2">Telecoms Services</span>
+								<span class="p"
+									>Stay connected with bespoke telecoms solutions when you need
+									it most.</span
+								>
+								<span class="btn-service"
+									><span class="btn btn-telecoms">Read More</span></span
+								>
+							</a>
+						</div>
+
+						<div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
+							<a class="block web" href="#">
+								<span class="icon"><i class="bi bi-code-slash"></i></span><br />
+								<span class="h2">Web Design</span>
+								<span class="p"
+									>User-centric design for businesses looking to make a lasting
+									impression.</span
+								>
+								<span class="btn-service"
+									><span class="btn btn-web">Read More</span></span
+								>
+							</a>
+						</div>
+
+						<div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
+							<a class="block security" href="#">
+								<span class="icon"><i class="bi bi-shield-lock-fill"></i></span
+								><br />
+								<span class="h2">Cyber Security</span>
+								<span class="p"
+									>Ensuring your online business stays secure 24/7 365 days of
+									the year</span
+								>
+								<span class="btn-service"
+									><span class="btn btn-security">Read More</span></span
+								>
+							</a>
+						</div>
+
+						<div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
+							<a class="block developer" href="#">
+								<span class="icon"
+									><i class="bi bi-mortarboard-fill h5"></i></span
+								><br />
+								<span class="h2">Developer Training</span>
+								<span class="p"
+									>Have you considered a career in web development but you
+									aren't sure where to start?</span
+								>
+								<span class="btn-service"
+									><span class="btn btn-developer">Read More</span></span
+								>
+							</a>
+						</div>
+
+						<!--end of cards -->
+					</div>
+				</div>
+				<!-- [x] End of ourServices -->
+
+				<!-- [ ] Start of awards -->
+				<div class="cara-wrap owl-carousel">
+					<div class="cara-item item">
+						<img src="images/award-img1b.jpg" alt="Royal Training" />
+					</div>
+					<div class="cara-item item">
+						<img src="images/award-img2b.jpg" alt="Future 50" />
+					</div>
+					<div class="cara-item item">
+						<img src="images/award-img3b.jpg" alt="QMS" />
+					</div>
+					<div class="cara-item item">
+						<img src="images/award-img4b.jpg" alt="Skills of tomorrow" />
+					</div>
+					<div class="cara-item item">
+						<img src="images/award-img5b.jpg alt="Google Partner">
+					</div>
+					<div class="cara-item item">
+						<img src="images/award-img6b.jpg" alt="Investing in Future" />
+					</div>
+					<div class="cara-item item">
+						<img src="images/award-img11b.jpg" alt="Norfolk Carbon Charter" />
+					</div>
+					<div class="cara-item item">
+						<img src="images/award-img8b.jpg" alt="PPC" />
+					</div>
+				</div>
+				<!-- [x] End of awards -->
+
+				<!-- [ ] Start of reviews -->
+				<div class="bio-wrap">
+					<div class="container section">
+						<div class="row">
+							<div class="col-md-12 col-lg-6 welcome-bio">
+								<p class="h1"><strong>Welcome To Netmatters</strong></p>
+								<p>
+									<strong
+										>Netmatters is a leading <a href="#">Bespoke Software</a>,
+										<a href="#">IT Support</a>, and
+										<a href="#">Digital Marketing</a> agency based in the East
+										of England with offices in <a href="#">Cambridge</a>,
+										<a href="#">Wymondham</a> and
+										<a href="#">Great Yarmouth</a></strong
+									>.
+								</p>
+								<p>
+									We aren't tied into contracts with third-party providers, so
+									you know that our recommendations for your business are based
+									purley with one benefit in mind: to help improve your business
+									with the most appropriate solutions.
+								</p>
+								<p>
+									We pride ourselves on being an ethical business and have a
+									unique business offering and cost model that ensures you get
+									the most from our relationship in an upfront manner.
+								</p>
+								<span class="btn btn-bio"
+									><span class="readmore"
+										>Read more <i class="bi bi-arrow-right-short"></i></span
+								></span>
 							</div>
-							<span class="client-quote"
-								>Great Service. Took the reigns and did all the leg work for us.
-								Ensured we were happy with our website and made all changes
-								necessary as and when asked to do so.</span
-							>
-							<br /><br />
-							<p class="client">Oliver King - SEA Scaffolding</p>
-							<a href="#"
-								><span class="btn btn-review btn-google"
-									><span class="reviews"
-										>Google Reviews
-										<i class="bi bi-arrow-right-short"></i></span></span
-							></a>
-							<a href="#"
-								><span class="btn btn-review btn-tp"
-									><span class="reviews"
-										>Trustpilot Reviews
-										<i class="bi bi-arrow-right-short"></i></span></span
-							></a>
+							<div class="col-md-12 col-lg-6 client-bio">
+								<p class="h1"><strong>What Our Clients Think</strong></p>
+								<div class="starbar">
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+								</div>
+								<span class="client-quote"
+									>Great Service. Took the reigns and did all the leg work for
+									us. Ensured we were happy with our website and made all
+									changes necessary as and when asked to do so.</span
+								>
+								<br /><br />
+								<p class="client">Oliver King - SEA Scaffolding</p>
+								<a href="#"
+									><span class="btn btn-review btn-google"
+										><span class="reviews"
+											>Google Reviews
+											<i class="bi bi-arrow-right-short"></i></span></span
+								></a>
+								<a href="#"
+									><span class="btn btn-review btn-tp"
+										><span class="reviews"
+											>Trustpilot Reviews
+											<i class="bi bi-arrow-right-short"></i></span></span
+								></a>
+							</div>
 						</div>
 					</div>
 				</div>
+				<!-- [x] End of reviews -->
+
+				<!-- [ ] Start of Partners -->
+
+				<!-- [x] End of Partners -->
+
+				<!-- [ ] Start of Footer -->
+
+				<!-- [x] End of footer -->
 			</div>
-			<!-- [x] End of reviews -->
-
-			<!-- [ ] Start of Partners -->
-			<div class="clientbanner-wrapper">
-				<div class="container client-container">
-				  <div class="row ">
-		  
-		  
-					<div class="tooltipimg">
-					  <div class="tooltipwrapper">
-						<img class="img-fluid client-image" src="assets/imgs/tooltips/busseys.png" alt="Busseys Logo">
-		  
-						<div class="tooltiptext">
-						  <p class="h6">Busseys</p>
-		  
-						  <p class="client-text">One of the UK's leading Ford dealerships</p>
-						</div>
-					  </div>
-					</div>
-		  
-		  
-		  
-		  
-					<div class="tooltipimg">
-					  <div class="tooltipwrapper">
-						<img class="img-fluid client-image" src="assets/imgs/tooltips/crane.png" alt="Crane Logo">
-		  
-						<div class="tooltiptext">
-						  <p class="h6">Crane Garden Builders</p>
-		  
-						  <p class="client-text">Leading manufacturer and supplier of high-end garden rooms, summerhouses,
-							workshops and sheds in the uk.</p>
-						</div>
-					  </div>
-					</div>
-		  
-		  
-		  
-					<div class="tooltipimg">
-					  <div class="tooltipwrapper">
-						<img class="img-fluid client-image" src="assets/imgs/tooltips/beat.png" alt="Beat logo">
-		  
-						<div class="tooltiptext">
-						  <p class="h6">Beat</p>
-		  
-						  <p class="client-text">The UK's eating disorder charity founded in 1989.</p>
-						</div>
-					  </div>
-					</div>
-		  
-		  
-		  
-					<div class="tooltipimg">
-					  <div class="tooltipwrapper">
-						<img class="img-fluid client-image" src="assets/imgs/tooltips/northern.png" alt="Norther Diver logo">
-		  
-						<div class="tooltiptext">
-						  <p class="h6">Northern Diver</p>
-		  
-						  <p class="client-text">Global water based equipment manufacturers for sport, military, commercial and
-							rescue businesses.</p>
-						</div>
-					  </div>
-					</div>
-				  </div>
-		  
-				</div>
-			  </div>
-			<!-- [x] End of Partners -->
-
-			<!-- [ ] Start of Footer -->
-
-			<!-- [x] End of footer -->
 		</div>
+		<!-- [x] End of wrapper -->
+		<!-- [ ] Start of SideNav -->
+		<div class="sidebarnav">
+			<div class="sidebarnav-wrap">
+				<ul>
+					<li id="sidebar-contact">
+						<a href="#">CONTACT US</a>
+					</li>
 
-		<!-- [ ] Start of script -->
+					<li class="sidebar-mobile-view software">
+						<a href="#">
+							<span><i class="bi bi-grid-3x3-gap-fill"></i></span>
+							<small>BESPOKE</small>
+							SOFTWARE
+						</a>
+						<ul class="sidebar-menu">
+							<li><a href="#">WORKFLOW</a></li>
+							<li><a href="#">AUTOMATION</a></li>
+							<li><a href="#">INTEGRATION</a></li>
+							<li><a href="#">DATABASE</a></li>
+							<li><a href="#">SHAREPOINT</a></li>
+							<li><a href="#">MANAGEMENT</a></li>
+							<li><a href="#">NAVISION</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-mobile-view it">
+						<a href="#">
+							<span><i class="bi bi-display"></i></span>
+							<small>IT</small>
+							SUPPORT
+						</a>
+						<ul class="sidebar-menu">
+							<li><a href="#">MANAGED IT</a></li>
+							<li><a href="#">BUSINESS IT</a></li>
+							<li><a href="#">OFFICE 365</a></li>
+							<li><a href="#">CONSULTANCY</a></li>
+							<li><a href="#">CLOUD PROVIDER</a></li>
+							<li><a href="#">DATA BACKUP</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-mobile-view digital">
+						<a href="#">
+							<span><i class="bi bi-reception-3"></i></span>
+							<small>DIGITAL</small>
+							MARKETING
+						</a>
+						<ul class="sidebar-menu">
+							<li><a href="#">SEARCH (SEO)</a></li>
+							<li><a href="#">PAID (PPC)</a></li>
+							<li><a href="#">CONVERSION (CRO)</a></li>
+							<li><a href="#">EMAIL</a></li>
+							<li><a href="#">SOCIAL MEDIA</a></li>
+							<li><a href="#">CONTENT</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-mobile-view telecoms">
+						<a href="#">
+							<span><i class="bi bi-telephone-plus-fill"></i></span>
+							<small>TELECOMS</small>
+							SERVICES
+						</a>
+						<ul class="sidebar-menu">
+							<li><a href="#">BUSINESS MOBILE</a></li>
+							<li><a href="#">HOSTED VOIP</a></li>
+							<li><a href="#">BUSINESS VOIP</a></li>
+							<li><a href="#">BUSINESS BROADBAND</a></li>
+							<li><a href="#">LEASED LINE</a></li>
+							<li><a href="#">3CX SYSTEMS</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-mobile-view web">
+						<a href="#">
+							<span><i class="bi bi-code-slash"></i></span>
+							<small>WEB</small>
+							DESIGN
+						</a>
+						<ul class="sidebar-menu">
+							<li><a href="#">STYLISH WEBSITES</a></li>
+							<li><a href="#">ECOMMERCE STORES</a></li>
+							<li><a href="#">BRANDING</a></li>
+							<li><a href="#">APPS</a></li>
+							<li><a href="#">WEB HOSTING</a></li>
+							<li><a href="#">PAY MONTHLY</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-mobile-view security">
+						<a href="#">
+							<span><i class="bi bi-shield-lock-fill"></i></span>
+							<small>CYBER</small>
+							SECURITY
+						</a>
+						<ul class="sidebar-menu">
+							<li><a href="#">ASSESSMENT</a></li>
+							<li><a href="#">MANAGEMENT</a></li>
+							<li><a href="#">PENETRATION TESTING</a></li>
+							<li><a href="#">CYBER ESSENTIALS</a></li>
+							<li><a href="#">PCI/DSS</a></li>
+							<li><a href="#">HACKER PREVENTION</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-mobile-view developer">
+						<a href="#">
+							<span><i class="bi bi-mortarboard-fill"></i></span>
+							<small>DEVELOPER</small>
+							COURSE
+						</a>
+						<ul class="sidebar-menu">
+							<li><a href="#">TRAIN FOR A CAREER IN TECH</a></li>
+							<li><a href="#">SCION SCHEME FREQUENTLY ASKED QUESTIONS</a></li>
+							<li><a href="#">SCION COLLABORATORS</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="sidebar-wide">
+					<li class="sidebar-submenu-head">
+						<a href="#">SERVICES</a>
+						<ul class="sidebar-submenu">
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>BESPOKE SOFTWARE</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>IT SUPPORT</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>DIGITAL
+									MARKETING</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>TELECOMS
+									SERVICES</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>WEB DESIGN</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>CYBER SECURITY</a
+								>
+							</li>
+						</ul>
+					</li>
+
+					<li class="sidebar-submenu-head">
+						<a href="#">OUR KNOWLEDGE</a>
+						<ul class="sidebar-submenu">
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>TECHNOLOGIES</a
+								>
+							</li>
+							<li>
+								<a href="#"><i class="bi bi-chevron-double-right"></i>NEWS</a>
+							</li>
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>INSIGHTS</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="sidebar-submenu-head">
+						<a href="#">TRAINING</a>
+						<ul class="sidebar-submenu">
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>TRAIN FOR A CAREER
+									IN TECH</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>SCS FREQUENTLY
+									ASKED QUESTIONS</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>SCION
+									COLLABORATORS</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="sidebar-submenu-head">
+						<a href="#">EVENTS</a>
+						<ul class="sidebar-submenu">
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>BUSINESS AUTOMATION
+									SEMINAR</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="sidebar-submenu-head">
+						<a href="#">OUR COMPANY</a>
+						<ul class="sidebar-submenu">
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>OUR CULTURE</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>OUR TEAM</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>OUR CAREERS</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>OUR BENEFITS</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>IT SUPPORT GREAT
+									YARMOUTH</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="sidebar-submenu-head">
+						<a href="#">OUR WORK</a>
+						<ul class="sidebar-submenu">
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>CASE STUDIES</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="sidebar-submenu-head">
+						<a href="#">COVID RISK ASSESSMENTS</a>
+					</li>
+					<li class="sidebar-submenu-head">
+						<a href="#">CONTACT US</a>
+						<ul class="sidebar-submenu">
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>CAMBRIDGE OFFICE</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>WYMONDHAM OFFICE</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="bi bi-chevron-double-right"></i>GREAT YARMOUTH
+									OFFICE</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="sidebar-submenu-head">
+						<a href="#">SUPPORT</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- [x] End of SideNav -->
+
+		<!-- [ ] Start of scripts -->
 		<script src="styles/js/header.js"></script>
+		<script src="styles/js/sideNav.js"></script>
+		<script src="styles/js/modal.js"></script>
+		<!-- [x] End of scripts -->
 	</body>
 </html>
