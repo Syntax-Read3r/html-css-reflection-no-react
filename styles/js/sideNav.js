@@ -1,4 +1,4 @@
-let button = document.querySelector('.hamburger-outer');
+let button = document.querySelector('.sidebarbtn');
 button.addEventListener('click', toggleNav);
 
 function toggleNav() {
